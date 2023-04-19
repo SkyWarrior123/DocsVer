@@ -1,7 +1,7 @@
 window.CONTRACT = {
-  address: '0x5A116c7a355D8b508aA3D4480Ae78E47efcdEc4D',
-  network: 'https://polygon-rpc.com/',
-  explore: 'https://polygonscan.com/',
+  address: '0xCB96641D46079dE1C6F96BfBE4Eebf3C2BD4Dccd',
+  network: 'https://polygon-mumbai.infura.io/v3/4458cf4d1689497b9a38b1d6bbf05e78',
+  explore: 'https://mumbai.polygonscan.com/',
   abi: [
     {
       anonymous: false,
@@ -230,9 +230,7 @@ window.onload = async () => {
 async function verify_Hash() {
   $('#loader').show()
   if (window.hashedfile) {
-    /*   I used the contract address as the caller of the function 'findDocHash'
-        you can use any address because it used just for reading info from the contract
-    */
+
     await contract.methods
       .findDocHash(window.hashedfile)
       .call({ from: window.userAddress})

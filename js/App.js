@@ -1,8 +1,8 @@
 window.CONTRACT = {
-  address: '0x5A116c7a355D8b508aA3D4480Ae78E47efcdEc4D',
-  network: 'https://polygon-rpc.com/',
-  explore: 'https://polygonscan.com/',
-  abi: [
+  address: '0xCB96641D46079dE1C6F96BfBE4Eebf3C2BD4Dccd',
+  network: 'https://polygon-mumbai.infura.io/v3/4458cf4d1689497b9a38b1d6bbf05e78',
+  explore: 'https://mumbai.polygonscan.com/',
+  abi: [ 
     {
       anonymous: false,
       inputs: [
@@ -495,7 +495,7 @@ async function get_ChainID() {
       window.chainID = 'Ethereum Main Network (Mainnet)'
       break
     case 80001:
-      window.chainID = 'Polygon Test Network'
+      window.chainID = 'Polygon Mumbai Network'
       break
     case 137:
       window.chainID = 'Polygon Mainnet'
